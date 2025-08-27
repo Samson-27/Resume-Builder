@@ -109,7 +109,7 @@ nav ul li a:hover {
 
 /* Features */
 .features {
-  background: #1a1a1a;
+  background: #111;
   padding: 50px 0;
 }
 
@@ -120,13 +120,15 @@ nav ul li a:hover {
 .feature-boxes {
   display: flex;
   justify-content: space-between;
-  text-align: center;
+  margin-top: 30px;
 }
 
 .feature {
-  border: 1 solid white;
   flex: 1;
   margin: 10px;
+  background: #1a1a1a;
+  padding: 20px;
+  border-radius: 5px;
 }
 
 .feature h3 {
@@ -182,13 +184,3 @@ nav ul li a:hover {
   margin-bottom: 10px;
 }
 
-/* How We Work */
-.work {
-  padding: 50px 0;
-  background: #1a1a1a;
-  text-align: center;
-}
-
-.work h2 {
-  margin-bottom: 10px;
-}
