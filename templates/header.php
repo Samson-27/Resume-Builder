@@ -11,16 +11,14 @@
 <body>
   <!-- Navbar -->
   <header>
-    <div class="container nav">
-      <div class="logo">RESUME BUILDER</div>
-      <nav>
-        <ul>
-          <li><a href="#">HOME</a></li>
-          <li><a href="#">RESUME</a></li>
-          <li><a href="#">LOGIN</a></li>
-        </ul>
-      </nav>
-    </div>
+    <nav>
+      <h4 class="logo">RESUME BUILDER</h4>
+      <ul>
+        <li><a href="#">HOME</a></li>
+        <li><a href="#">RESUME</a></li>
+        <li><a href="#">LOGIN</a></li>
+      </ul>
+    </nav>
   </header>
 </body>
 

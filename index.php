@@ -18,7 +18,9 @@
         <p>Simple, fast, and customizable templates to land your dream job.</p>
         <a href="#" class="btn">Start Now</a>
       </div>
-      <img src="assets/uploads/resume.png" alt="resume img" />
+      <div class="hero-img">
+        <img src="assets/uploads/resume.png" alt="resume img" />
+      </div>
     </div>
   </section>
   <br /><br /><br />
