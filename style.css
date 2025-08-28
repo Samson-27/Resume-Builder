@@ -89,12 +89,6 @@ nav ul li a:hover {
   color: #111;
 }
 
-.hero-text img{
-  width: 100%;
-  padding-left: 800px;
-  padding-top: 600px;
-}
-
 .btn {
   display: inline-block;
   background: #0f969c;
@@ -132,7 +126,7 @@ nav ul li a:hover {
   margin: 10px;
   background: #111;
   padding: 20px;
-  border-radius: 5px;
+  border-radius: 20px;
   color: #fff;
 }
 
@@ -181,7 +175,7 @@ nav ul li a:hover {
   margin: 10px;
   background: #111;
   padding: 20px;
-  border-radius: 5px;
+  border-radius: 20px;
   color: #fff;
 }
 
