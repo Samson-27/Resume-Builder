@@ -3,7 +3,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Arial', sans-serif;
+  font-family: "Arial", sans-serif;
 }
 
 body {
@@ -22,6 +22,7 @@ body {
 header {
   background: #0d0d0d;
   padding: 20px 0;
+  position: relative;
 }
 
 .logo {
@@ -60,19 +61,24 @@ nav ul li a:hover {
 }
 
 /* Hero Section */
-.hero {
+.hero-section {
   height: 100vh;
+}
+.hero-center {
+  height: 80vh;
   display: flex;
   padding-top: 180px;
   padding-left: 150px;
   position: relative;
 }
 
-.hero::after {
+.hero-center::after {
   content: "";
   position: absolute;
-  top: 0; left: 0;
-  width: 100%; height: 100%;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 .hero-text {
@@ -104,14 +110,13 @@ nav ul li a:hover {
   background: #0f969c;
 }
 
-
 /* Features */
 .features {
   background-color: #fff;
   padding: 50px 0;
 }
 
-.features h1{
+.features h1 {
   text-align: center;
   font-style: bold;
 }
@@ -183,4 +188,3 @@ nav ul li a:hover {
   color: #0f969c;
   margin-bottom: 10px;
 }
-

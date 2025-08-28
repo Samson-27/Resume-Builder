@@ -1,39 +1,32 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Resume Builder</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <!-- Navbar -->
-  <header>
-    <div class="container nav">
-       <div class="logo">RESUME BUILDER</div>
-      <nav>
-        <ul>
-          <li><a href="#">HOME</a></li>
-          <li><a href="#">RESUME</a></li>
-          <li><a href="#">LOGIN</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
 
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Resume Builder</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
   <!-- Hero Section -->
-  <section class="hero">
-    <div class="hero-text">
-        <h1>Build Your Professional <br>Resume in Minutes</h1>
-        <p>Simple, fast, and customizable templates to land your dream job.</p> 
-      <a href="#" class="btn">Start Now</a>
+  <section class="hero-section">
+    <?php include 'templates/header.php'; ?>
+    <div class="hero-center">
+      <div class="hero-text">
+        <h1>Build Your Professional <br />Resume in Minutes</h1>
+        <p>Simple, fast, and customizable templates to land your dream job.</p>
+        <a href="#" class="btn">Start Now</a>
+      </div>
+      <img src="assets/uploads/resume.png" alt="resume img" />
     </div>
-    <img src="resume.png" alt="resume img">
-  </section><br><br><br>
+  </section>
+  <br /><br /><br />
 
   <!-- Features -->
   <section class="features">
-    <h1>FEATURE</h1><br>
+    <h1>FEATURE</h1>
+    <br />
     <div class="container feature-boxes">
       <div class="feature">
         <h3>Create Unlimited Resumes</h3>
@@ -49,11 +42,16 @@
       </div>
       <div class="feature">
         <h3>Professional Templates</h3>
-        <p>Choose from modern, recruiter-approved templates to make your resume stand out.</p>
+        <p>
+          Choose from modern, recruiter-approved templates to make your resume
+          stand out.
+        </p>
       </div>
       <div class="feature">
         <h3>Save & Edit</h3>
-        <p>Save your work and be able to changes it later or in the future.</p>
+        <p>
+          Save your work and be able to changes it later or in the future.
+        </p>
       </div>
     </div>
   </section>
@@ -67,9 +65,14 @@
         <button class="btn">Our Vision</button>
         <button class="btn">Our Skills</button>
       </div>
-      <p>Welcome to Resume Builder – your one-stop solution for creating professional resumes with ease.
-
-We know how stressful job hunting can be, and that’s why we built this platform – to make resume building simple, quick, and effective. Whether you’re a student, a fresher, or a professional, our goal is to help you craft a resume that truly highlights your skills and achievements.</p>
+      <p>
+        Welcome to Resume Builder – your one-stop solution for creating
+        professional resumes with ease. We know how stressful job hunting can
+        be, and that’s why we built this platform – to make resume building
+        simple, quick, and effective. Whether you’re a student, a fresher, or
+        a professional, our goal is to help you craft a resume that truly
+        highlights your skills and achievements.
+      </p>
       <div class="about-boxes">
         <div class="about-item">
           <h3>Web design</h3>
@@ -86,6 +89,6 @@ We know how stressful job hunting can be, and that’s why we built this platfor
       </div>
     </div>
   </section>
-
 </body>
+
 </html>
