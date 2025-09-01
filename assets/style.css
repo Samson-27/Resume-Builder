@@ -21,7 +21,7 @@ body {
 
 /* Navbar */
 header {
-  background: #0d0d0d;
+  background: #111;
   padding: 20px 0;
   position: relative;
 }
@@ -30,10 +30,6 @@ header {
   font-size: 22px;
   font-weight: bold;
   color: #fff;
-}
-
-.logo span {
-  color: #0f969c;
 }
 
 nav {
@@ -113,34 +109,59 @@ nav ul li a:hover {
   background: #0f969c;
 }
 
+.img{
+  width: 600px;
+  height: auto;
+}
+
 /* Features */
 .features {
-  background-color: #fff;
-  padding: 50px 0;
-}
-
-.features h1 {
   text-align: center;
-  font-style: bold;
-}
-.feature-boxes {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 30px;
+  padding: 50px 20px;
 }
 
-.feature {
-  flex: 1;
-  margin: 10px;
-  background: #111;
-  padding: 20px;
-  border-radius: 20px;
+.features h2 {  
+  padding: 5px;
+  background-color: #111;
+  text-align: left;
   color: #fff;
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 40px;
 }
 
-.feature h3 {
+.feature-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.feature-box {
+  background: #111;
+  color: #fff;
+  padding: 25px;
+  border-radius: 15px;
+  min-height: 180px;
+  transition: transform 0.3s ease, background 0.3s ease;  
+}
+
+.feature-box:hover {
+  transform: translateY(-8px);
+  background: #222;
+}
+
+.feature-box h3 {
+  color: #0dbebc;
+  font-size: 18px;
   margin-bottom: 10px;
-  color: #0f969c;
+}
+
+.feature-box p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #ddd;
 }
 
 /* About Us */
@@ -149,7 +170,9 @@ nav ul li a:hover {
 }
 
 .about h2 {
-  text-align: center;
+  padding: 8px;
+  background-color: #111;
+  color: #fff;
   margin-bottom: 20px;
 }
 
@@ -190,4 +213,19 @@ nav ul li a:hover {
 .about-item h3 {
   color: #0f969c;
   margin-bottom: 10px;
+}
+
+/*Footer*/
+
+.footer-container{
+  padding: 100px;
+  background-color: #111;
+  color: #fff;
+}
+.logo{
+
+}
+
+.footer-container p{
+  text-align: center;
 }

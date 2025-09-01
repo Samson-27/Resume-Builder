@@ -18,41 +18,46 @@
         <p>Simple, fast, and customizable templates to land your dream job.</p>
         <a href="#" class="btn">Start Now</a>
       </div>
-      <img src="assets/uploads/resume.png" alt="resume img" />
+      <img src="assets/uploads/resume.png" alt="resume img" class="img">
     </div>
-  </section>
-  <br /><br /><br />
+  </section><br /><br /><br />
 
   <!-- Features -->
+
   <section class="features">
-    <h1>FEATURE</h1>
-    <br />
-    <div class="container feature-boxes">
-      <div class="feature">
+    <h2>FEATURES</h2>
+    <div class="feature-container">
+
+      <div class="feature-box">
         <h3>Create Unlimited Resumes</h3>
-        <p>Make as many resumes as you want no limits, no restrictions.</p>
+        <p>Make as many resumes as you want, no limits, no restrictions.</p>
       </div>
-      <div class="feature">
+
+      <div class="feature-box">
         <h3>Real-time Preview</h3>
         <p>See your resume as you build it in real-time.</p>
       </div>
-      <div class="feature">
+
+      <div class="feature-box">
+        <h3>Easy with AI</h3>
+        <p>Quickly generate formal phrases and summaries to sound professional.</p>
+      </div>
+
+      <div class="feature-box">
         <h3>Easy Download</h3>
         <p>Download your resume in PDF format with just one click.</p>
       </div>
-      <div class="feature">
+
+      <div class="feature-box">
         <h3>Professional Templates</h3>
-        <p>
-          Choose from modern, recruiter-approved templates to make your resume
-          stand out.
-        </p>
+        <p>Choose from modern, recruiter-approved templates to stand out.</p>
       </div>
-      <div class="feature">
+
+      <div class="feature-box">
         <h3>Save & Edit</h3>
-        <p>
-          Save your work and be able to changes it later or in the future.
-        </p>
+        <p>Save your work and edit it anytime in the future.</p>
       </div>
+
     </div>
   </section>
 
@@ -66,9 +71,9 @@
         <button class="btn">Our Skills</button>
       </div>
       <p>
-        Welcome to Resume Builder – your one-stop solution for creating
+        Welcome to Resume Builder your one-stop solution for creating
         professional resumes with ease. We know how stressful job hunting can
-        be, and that’s why we built this platform – to make resume building
+        be, and that’s why we built this platform to make resume building
         simple, quick, and effective. Whether you’re a student, a fresher, or
         a professional, our goal is to help you craft a resume that truly
         highlights your skills and achievements.
@@ -89,6 +94,8 @@
       </div>
     </div>
   </section>
+  <section>
+    <?php include 'templates/footer.php'; ?>
+  </section>
 </body>
-
 </html>
