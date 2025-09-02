@@ -35,7 +35,7 @@
       <div class="feature-box">
         <i class="ri-lock-fill"></i>
         <h3>Secure Authentication</h3>
-        <p>Make as many resumes as you want, no limits, no restrictions.</p>
+        <p>Protect your account with encrypted login and strong password security.</p>
       </div>
 
       <div class="feature-box">
@@ -74,7 +74,7 @@
   <!-- About Us -->
   <section class="about">
     <div class="container">
-      <h2>ABOUT US</h2>
+      <h2>ABOUT</h2>
       <div class="tabs">
         <button class="btn">What We Do</button>
         <button class="btn">Our Vision</button>

@@ -195,12 +195,10 @@ nav ul li a:hover {
 }
 
 .about h2 {
-  padding: 8px;
-  background-color: #111;
-  color: #fff;
+  text-align: center;
+  color: #111;
   margin-bottom: 20px;
-  width: 100%;
-
+  font-size: 35px;
 }
 
 .tabs {
