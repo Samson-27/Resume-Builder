@@ -4,6 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet">
   <title>Resume Builder</title>
   <link rel="stylesheet" href="assets/style.css" />
 </head>
@@ -25,35 +26,44 @@
   <!-- Features -->
 
   <section class="features">
-    <h2>FEATURES</h2>
+    <div class="feature-header">
+      <h2>Powerful Tools To Build Your Resume</h2>
+      <p>Create, edit, and customize resumes quickly with smart features designed to make you stand out.</p>
+    </div>
     <div class="feature-container">
 
       <div class="feature-box">
-        <h3>Create Unlimited Resumes</h3>
+        <i class="ri-lock-fill"></i>
+        <h3>Secure Authentication</h3>
         <p>Make as many resumes as you want, no limits, no restrictions.</p>
       </div>
 
       <div class="feature-box">
+        <i class="ri-time-line"></i>
         <h3>Real-time Preview</h3>
         <p>See your resume as you build it in real-time.</p>
       </div>
 
       <div class="feature-box">
+        <i class="ri-robot-3-line"></i>
         <h3>Easy with AI</h3>
         <p>Quickly generate formal phrases and summaries to sound professional.</p>
       </div>
 
       <div class="feature-box">
+        <i class="ri-file-download-fill"></i>
         <h3>Easy Download</h3>
         <p>Download your resume in PDF format with just one click.</p>
       </div>
 
       <div class="feature-box">
+        <i class="ri-file-copy-2-line"></i>
         <h3>Professional Templates</h3>
         <p>Choose from modern, recruiter-approved templates to stand out.</p>
       </div>
 
       <div class="feature-box">
+        <i class="ri-save-line"></i>
         <h3>Save & Edit</h3>
         <p>Save your work and edit it anytime in the future.</p>
       </div>
