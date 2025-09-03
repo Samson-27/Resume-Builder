@@ -190,61 +190,144 @@ nav ul li a:hover {
 }
 
 /* About Us */
-.about {
-  padding: 50px 0;
-}
-
-.about h2 {
+.about-hero {
   text-align: center;
-  color: #111;
-  margin-bottom: 20px;
-  font-size: 35px;
-}
-
-.tabs {
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-.tabs button {
-  background: none;
-  border: none;
+  padding: 100px 20px;
+  background: linear-gradient(135deg, #000 40%, #444);
   color: #fff;
-  padding: 10px 20px;
-  margin: 0 5px;
+  animation: fadeIn 1.2s ease-in-out;
+}
+.about-hero h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+.about-hero p {
+  font-size: 1.2rem;
+  opacity: 0.9;
+}
+
+/* ===== Mission Section ===== */
+.about-mission {
+  max-width: 900px;
+  margin: 60px auto;
+  padding: 20px;
+  text-align: center;
+}
+.about-mission h2 {
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
+.about-mission p {
+  font-size: 1.1rem;
+}
+
+/* ===== Features Section ===== */
+.about-features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  max-width: 1100px;
+  margin: 60px auto;
+  padding: 20px;
+}
+
+.about-features .feature {
+  background: #fff;
+  border-radius: 12px;
+  padding: 30px 20px;
+  text-align: center;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.08);  
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
   cursor: pointer;
 }
 
-.tabs .btn {
-  background: #0f969c;
-  border-radius: 5px;
+.about-features .feature:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.12);
 }
 
-.about-boxes {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 30px;
+.about-features .feature h3 {
+  margin-bottom: 15px;
+  font-size: 1.3rem;
 }
 
-.about-item {
-  flex: 1;
-  margin: 10px;
+/* ===== Team/Project Section ===== */
+
+.about-team {
+  background: #fff;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.about-team h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.about-team p {
+  max-width: 800px;
+  margin: 0 auto;
+  font-size: 1.1rem;
+}
+
+/* ===== CTA Section ===== */
+.about-cta {
+  text-align: center;
+  padding: 70px 20px;
   background: #111;
-  padding: 20px;
-  border-radius: 20px;
   color: #fff;
+  animation: fadeInUp 1.3s ease;
 }
 
-.about-item h3 {
-  color: #0f969c;
-  margin-bottom: 10px;
+.about-cta h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.about-cta .cta-btn {
+  display: inline-block;
+  padding: 14px 30px;
+  background: #fff;
+  color: #111;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 30px;
+  transition: background 0.3s ease, color 0.3s ease, transform 0.2s ease;
+}
+
+.about-cta .cta-btn:hover {
+  background: #111;
+  color: #fff;
+  transform: scale(1.05);
+}
+
+/* ===== Animations ===== */
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes fadeInUp {
+  from {opacity: 0; transform: translateY(20px);}
+  to {opacity: 1; transform: translateY(0);}
+}
+
+.feature i{
+  font-size: 40px;
+  display: block;
+  transition: 0.3s;
+}
+
+.feature i:hover{
+  color: #ff9800;
+  transform: scale(1.2);
 }
 
 /*Footer*/
 
 .footer-container{
   padding: 100px;
-  background-color: #111;
+  background-color: #000;
   color: #fff;
 }
 .logo{

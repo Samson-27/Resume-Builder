@@ -72,37 +72,55 @@
   </section>
 
   <!-- About Us -->
-  <section class="about">
-    <div class="container">
-      <h2>ABOUT</h2>
-      <div class="tabs">
-        <button class="btn">What We Do</button>
-        <button class="btn">Our Vision</button>
-        <button class="btn">Our Skills</button>
-      </div>
-      <p>
-        Welcome to Resume Builder your one-stop solution for creating
-        professional resumes with ease. We know how stressful job hunting can
-        be, and that’s why we built this platform to make resume building
-        simple, quick, and effective. Whether you’re a student, a fresher, or
-        a professional, our goal is to help you craft a resume that truly
-        highlights your skills and achievements.
-      </p>
-      <div class="about-boxes">
-        <div class="about-item">
-          <h3>Web design</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-        </div>
-        <div class="about-item">
-          <h3>Digital production</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-        </div>
-        <div class="about-item">
-          <h3>Internet marketing</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-        </div>
-      </div>
+
+  <section class="about-hero">
+    <h1>About Us</h1>
+    <p>Building resumes that land jobs</p>
+  </section>
+
+  <!-- Mission Section -->
+  <section class="about-mission">
+    <h2>Our Mission</h2>
+    <p>
+      We aim to make resume building simple, professional, and effective for everyone — 
+      whether you’re a student or a working professional. Our tool helps you showcase your skills 
+      with clarity and confidence.
+    </p>
+  </section>
+
+  <!-- Features Section -->
+  <section class="about-features">
+    <div class="feature">
+      <i class="ri-file-copy-2-line"></i>
+      <h3> Easy-to-use Templates</h3>
+      <p>Create resumes quickly with beautiful, customizable templates.</p>
     </div>
+    <div class="feature">
+      <i class="ri-lock-fill"></i> 
+      <h3> Secure & Private</h3>
+      <p>Your data stays safe, encrypted, and confidential at all times.</p>
+    </div>
+    <div class="feature">
+      <i class="ri-speed-fill"></i>
+      <h3> Fast & Free</h3>
+      <p>Generate professional resumes instantly at no cost.</p>
+    </div>
+  </section>
+
+  <!-- Team Section -->
+  <section class="about-team">
+    <h2>About the Project</h2>
+    <p>
+      This Resume Builder was created as part of a BCA Final Year Project to empower students and 
+      professionals with a reliable tool for building impactful resumes. Designed with simplicity 
+      and modern design principles in mind, it ensures you stand out in your job applications.
+    </p>
+  </section>
+
+  <!-- Call to Action Section -->
+  <section class="about-cta">
+    <h2>Ready to Create Your Professional Resume?</h2>
+    <a href="resume.html" class="cta-btn">Start Building</a>
   </section>
   <section>
     <?php include 'templates/footer.php'; ?>
