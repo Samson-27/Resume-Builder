@@ -22,43 +22,70 @@ body {
 
 /* Navbar */
 header {
-  background: #111;
   padding: 20px 0;
   position: sticky;
 }
 
-.logo {
-  font-size: 26px;
-  font-weight: bold;
-  color: #fff;
-}
-
-nav {
+.navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 30px;
-  height: 25px;
+  padding: 18px 60px;
+  background: #fff;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
-nav ul {
-  display: flex;
-  list-style: none;
+.logo {
+  font-size: 22px;
+  font-weight: 700;
+  color: #222;
 }
-
-nav ul li {
-  margin-left: 20px;
-}
-
-nav ul li a {
-  text-decoration: none;
-  color: #fff;
-  transition: 0.3s;
-}
-
-nav ul li a:hover {
+.logo span {
   color: #0f969c;
 }
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 28px;
+}
+.nav-links li a {
+  text-decoration: none;
+  font-weight: 500;
+  color: #333;
+  transition: color 0.3s;
+}
+.nav-links li a:hover {
+  color: #0f969c;
+}
+
+.nav-btns .btn {
+  padding: 8px 16px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+.login {
+  border: 1px solid #0f969c;
+  color: #0f969c;
+}
+.login:hover {
+  background: #0f969c;
+  color: #fff;
+}
+.signup {
+  background: #0f969c;
+  color: #fff;
+  margin-left: 12px;
+}
+.signup:hover {
+  background: #0f969c;
+}
+
 
 /* Hero Section */
 .hero-section {
