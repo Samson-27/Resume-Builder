@@ -47,7 +47,7 @@
       <div class="feature-box">
         <i class="ri-robot-3-line"></i>
         <h3>Easy with AI</h3>
-        <p>Quickly generate formal phrases and summaries to sound professional.</p>
+        <p>Quickly generate professional resume in munites with help of ai.</p>
       </div>
 
       <div class="feature-box">
@@ -71,50 +71,57 @@
     </div>
   </section>
 
-  <!-- About Us -->
-
-  <section class="about-hero">
-    <h1>About Us</h1>
-    <p>Building resumes that land jobs</p>
-  </section>
-
-  <!-- Mission Section -->
-  <section class="about-mission">
-    <h2>Our Mission</h2>
-    <p>
-      We aim to make resume building simple, professional, and effective for everyone — 
-      whether you’re a student or a working professional. Our tool helps you showcase your skills 
-      with clarity and confidence.
-    </p>
-  </section>
-
-  <!-- Features Section -->
-  <section class="about-features">
-    <div class="feature">
-      <i class="ri-file-copy-2-line"></i>
-      <h3> Easy-to-use Templates</h3>
-      <p>Create resumes quickly with beautiful, customizable templates.</p>
-    </div>
-    <div class="feature">
-      <i class="ri-lock-fill"></i> 
-      <h3> Secure & Private</h3>
-      <p>Your data stays safe, encrypted, and confidential at all times.</p>
-    </div>
-    <div class="feature">
-      <i class="ri-speed-fill"></i>
-      <h3> Fast & Free</h3>
-      <p>Generate professional resumes instantly at no cost.</p>
+  <!-- How It Works Section -->
+  <section class="how-it-works">
+    <h2>How It Works</h2>
+    <p class="section-sub">Create your professional resume in just a few simple steps.</p>
+    <div class="steps">
+      <div class="step">
+        <div class="circle">1</div>
+        <h3>Sign Up</h3>
+        <p>Create your free account to get started.</p>
+      </div>
+      <div class="step">
+        <div class="circle">2</div>
+        <h3>Choose a Template</h3>
+        <p>Select a template that best fits your style and industry.</p>
+      </div>
+      <div class="step">
+        <div class="circle">3</div>
+        <h3>Fill in Your Details</h3>
+        <p>Enter your personal information, experience, and skills.</p>
+      </div>
+      <div class="step">
+        <div class="circle">4</div>
+        <h3>Download & Share</h3>
+        <p>Download your resume as a PDF and start applying for jobs.</p>
+      </div>
     </div>
   </section>
 
-  <!-- Team Section -->
-  <section class="about-team">
-    <h2>About the Project</h2>
-    <p>
-      This Resume Builder was created as part of a BCA Final Year Project to empower students and 
-      professionals with a reliable tool for building impactful resumes. Designed with simplicity 
-      and modern design principles in mind, it ensures you stand out in your job applications.
-    </p>
+  <!-- Resume Templates Section -->
+  <section class="templates">
+    <h2>Explore Our Resume Templates</h2>
+    <div class="template-grid">
+      <div class="template-card">
+        <img src="assets/uploads/2.png" alt="Modern Template">
+        <h4>Modern Template</h4>
+        <p>A sleek and contemporary design perfect for showcasing your skills and experience.</p>
+      </div>
+      <div class="template-card">
+        <img src="assets/uploads/1.png" alt="Creative Template">
+        <h4>Creative Template</h4>
+        <p>A visually appealing template that highlights your creativity and personality.</p>
+      </div>
+      <div class="template-card">
+        <img src="assets/uploads/3.png" alt="Professional Template">
+        <h4>Professional Template</h4>
+        <p>A classic and formal template ideal for traditional industries.</p>
+      </div>
+      <div class="temp-btn-wrap">
+        <a href="#" class="temp-btn">Choose Template</a>
+      </div>
+    </div>
   </section>
 
   <!-- Call to Action Section -->
@@ -122,8 +129,13 @@
     <h2>Ready to Create Your Professional Resume?</h2>
     <a href="resume.html" class="cta-btn">Start Building</a>
   </section>
+
+  <!--Footer-->
   <section>
     <?php include 'templates/footer.php'; ?>
   </section>
+
+  <!--Javascript-->
+    <script src="assets/script.js"></script>
 </body>
 </html>

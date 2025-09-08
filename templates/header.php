@@ -13,13 +13,12 @@
 <!-- Navbar -->
 <nav class="navbar">
   <div class="logo">Resume Builder</div>
+  <div class="nav-right">
   <ul class="nav-links">
     <li><a href="#home">Home</a></li>
     <li><a href="#features">Features</a></li>
     <li><a href="#templates">Templates</a></li>
-    <li><a href="#about">About</a></li>
-    <li><a href="#pricing">Pricing</a></li>
-    <li><a href="#contact">Contact</a></li>
+    <li><a href="about.php">About</a></li>
   </ul>
   <div class="nav-btns">
     <a href="#login" class="btn login">Login</a>
