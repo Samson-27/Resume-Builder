@@ -21,8 +21,8 @@
     <li><a href="about.php">About</a></li>
   </ul>
   <div class="nav-btns">
-    <a href="#login" class="btn login">Login</a>
-    <a href="#signup" class="btn signup">Sign Up</a>
+    <a href="login.php" class="btn login">Login</a>
+    <a href="sign.php" class="btn signup">Sign Up</a>
   </div>
 </nav>
 

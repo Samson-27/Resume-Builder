@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resume Builder</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
 
@@ -33,7 +33,7 @@
       <p>Create resumes quickly with beautiful, customizable templates.</p>
     </div>
     <div class="feature">
-      <i class="ri-lock-fill"></i> 
+      <i class="ri-lock-fill"></i>
       <h3> Secure & Private</h3>
       <p>Your data stays safe, encrypted, and confidential at all times.</p>
     </div>
@@ -41,6 +41,31 @@
       <i class="ri-speed-fill"></i>
       <h3> Fast & Free</h3>
       <p>Generate professional resumes instantly at no cost.</p>
+    </div>
+  </section>
+
+<!-- Resume Templates Section -->
+  <section class="templates">
+    <h2>Templates That We Provide</h2>
+    <div class="template-grid">
+      <div class="template-card">
+        <img src="assets/uploads/2.png" alt="Modern Template">
+        <h4>Modern Template</h4>
+        <p>A sleek and contemporary design perfect for showcasing your skills and experience.</p>
+      </div>
+      <div class="template-card">
+        <img src="assets/uploads/1.png" alt="Creative Template">
+        <h4>Creative Template</h4>
+        <p>A visually appealing template that highlights your creativity and personality.</p>
+      </div>
+      <div class="template-card">
+        <img src="assets/uploads/3.png" alt="Professional Template">
+        <h4>Professional Template</h4>
+        <p>A classic and formal template ideal for traditional industries.</p>
+      </div>
+      <div class="temp-btn-wrap">
+        <a href="#" class="temp-btn">Choose Template</a>
+      </div>
     </div>
   </section>
 

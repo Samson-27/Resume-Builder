@@ -17,10 +17,10 @@
                         <input type="text" class="password" id="password" placeholder="Enter your password"required>
                     </div>
                     <div class="field">  
-                        <input type="submit" class="submit" value="Login" placeholder="Enter your name" required>
+                        <input type="submit" class="btn" name="submit" value="Login" placeholder="Enter your name" required>
                     </div>
                     <div class="links">
-                        Don't have account? <a href="register.html">Sign Up</a>
+                        Don't have an account? <a href="sign.php">Sign Up</a>
                     </div>
                 </form>
             </form-box>
