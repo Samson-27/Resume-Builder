@@ -4,6 +4,7 @@
         <link rel="stylesheet" href="assets/style.css">
     </head>
     <body>
+        <?php include 'templates/header.php'; ?>
         <div class="container">
             <div class="form-box">
                 <header>Login</header>

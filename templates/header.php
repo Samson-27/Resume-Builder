@@ -15,7 +15,7 @@
   <div class="logo">Resume Builder</div>
   <div class="nav-right">
   <ul class="nav-links">
-    <li><a href="#home">Home</a></li>
+    <li><a href="index.php">Home</a></li>
     <li><a href="#features">Features</a></li>
     <li><a href="#templates">Templates</a></li>
     <li><a href="about.php">About</a></li>

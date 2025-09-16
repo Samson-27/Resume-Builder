@@ -1,3 +1,11 @@
+<?php
+//Initialize the session
+session_start();
+
+$authenticated = false;
+?>
+
+
 <!doctype html>
 <html lang="en">
 
