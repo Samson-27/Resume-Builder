@@ -1,5 +1,9 @@
 <?php
-include 'templates/header.php';
+session_start();
+if (isset($_SESSION['email'])) {
+  header("Location: dashboard.php");
+  exit();
+}
 
 $username = "";
 $email = "";
@@ -79,11 +83,11 @@ if($confirm_password != $password){
                         <span class="text-danger"><?= $confirm_password_error ?></span>
                     </div>
                     <div class="field">  
-                        <input type="submit" class="btn" name="submit" value="Login" placeholder="Enter your name" value="" required>
+                        <input type="submit" class="btn" name="submit" value="Login" value="" required>
                         <span class="text-danger"></span>
                     </div>
                     <div class="links">
-                        Already have an account?<a href="index.php">Sign In</a>
+                        Already have an account?<a href="login.php">Sign In</a>
                     </div>
                 </form>
             </form-box>

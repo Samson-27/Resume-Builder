@@ -1,5 +1,9 @@
 <?php
-include 'templates/header.php';
+session_start();
+if (isset($_SESSION["email"])) {
+  header("Location: dashboard.php");
+  exit();
+}
 
 
 $email = "";
@@ -27,8 +31,8 @@ if (!preg_match('/^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$/', $email)){
 }
 
 /********validate password********/
-if(strlen($password) < 6){
-    $password_error = "Password must have at least 6 characters";
+if (!preg_match('/^(?=.\d)(?=.[a-z]).{8,}$/',$password)){
+    $password_error = "Password format is not valid";
     $error = true;
 }
 
@@ -69,7 +73,7 @@ if($confirm_password != $password){
                         <span class="text-danger"><?= $confirm_password_error ?></span>
                     </div>
                     <div class="field">  
-                        <input type="submit" class="btn" name="submit" value="Login" placeholder="Enter your name" required>
+                        <button onclick="location.('dashboard.php')" class="btn" name="submit" value="login" >Login</button>
                     </div>
                     <div class="links">
                         Don't have an account? <a href="sign.php">Sign Up</a>

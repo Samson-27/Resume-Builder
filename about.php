@@ -9,7 +9,7 @@
 <body>
 
 <!-- About Us -->
-
+  <?php include 'templates/header.php'; ?>
   <section class="about-hero">
     <h1>About Us</h1>
     <p>Building resumes that land jobs</p>
