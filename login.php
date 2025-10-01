@@ -6,80 +6,69 @@ if (isset($_SESSION["email"])) {
 }
 
 
-$email = "";
-$password = "";
-$confirm_password = "";
-
-
-$email_error = "";
-$password_error = "";
-$confirm_password_error = "";
-
-$error = false;
-
-if($_SERVER['REQUEST_METHOD'] == 'POST'){
-    $email = $_POST['email'];
-    $password = $_POST['password'];
-    $confirm_password = $_POST['confirm_password'];
-
-}
-
-/*******validate Email*********/
-if (!preg_match('/^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$/', $email)){
-    $email_error = "Email format is not valid";
-    $error = true;
-}
-
-/********validate password********/
-if (!preg_match('/^(?=.\d)(?=.[a-z]).{8,}$/',$password)){
-    $password_error = "Password format is not valid";
-    $error = true;
-}
-
-
-/*******validate confirm password*********/
-if($confirm_password != $password){
-    $confirm_password_error = "Password and Confirm Password do not match";
-    $error = true;
+$user_email = "";
+$error = "";
+if ($_SERVER['REQUEST_METHOD'] == "POST") {
+  $user_email = htmlspecialchars($_POST['email']);
+  $password = htmlspecialchars($_POST['password']);
+  require_once "includes/db.php";
+  $stmt = $conn->prepare("SELECT user_id,name,email,password,created_at FROM users WHERE email=?");
+  $stmt->bind_param("s", $user_email);
+  $stmt->execute();
+  $stmt->bind_result($user_id, $username, $email, $hashed_password, $created_at);
+  if ($stmt->fetch()) {
+    if (password_verify($password, $hashed_password)) {
+      session_start();
+      $_SESSION['user_id'] = $user_id;
+      $_SESSION['username'] = $username;
+      $_SESSION['email'] = $email;
+      $_SESSION['created_at'] = $created_at;
+      header("Location: dashboard.php");
+      exit();
+    }
+  }
+  $stmt->close();
+  $error = "Invalid email or password";
 }
 
 ?>
 
 
 <html>
-    <head>
-        <title>Login Page</title>
-        <link rel="stylesheet" href="assets/style.css">
-    </head>
-    <body>
 
-        <div class="container">
-            <div class="form-box">
-                <header>Login</header>
-                <form action="" method="post">
-                    <div class="field input">
-                        <label for="username">Email</label>
-                        <input type="text" class="username" id="username" name = "email" value = "<?=$email ?>" placeholder="Enter your Email" required>
-                        <span class="text-danger"><?= $email_error ?></span>
-                    </div>
-                    <div class="field input">
-                        <label for="password">Password*</label>
-                        <input type="password" class="password" id="password" name = "password" value = "<?=$password ?>" placeholder="Enter your password"required>
-                         <span class="text-danger"><?= $password_error ?></span>
-                    </div>
-                    <div class="field input">
-                        <label for="confirm password">Confirm Password*</label>
-                        <input type="password" class="confirm_password" id="confirm_password" name="confirm_password" placeholder="Confirm your password" autocomplete="off" required>
-                        <span class="text-danger"><?= $confirm_password_error ?></span>
-                    </div>
-                    <div class="field">  
-                        <button onclick="location.('dashboard.php')" class="btn" name="submit" value="login" >Login</button>
-                    </div>
-                    <div class="links">
-                        Don't have an account? <a href="sign.php">Sign Up</a>
-                    </div>
-                </form>
-            </form-box>
+<head>
+  <title>Login Page</title>
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="form-box">
+      <header>Login</header>
+      <form action="" method="post">
+        <?php if ($error) { ?>
+          <div class="error_message_login">
+            <p class="p_login" style="text-align: center;color: red;"><strong><?= $error ?></strong></p>
+          </div>
+        <?php } ?>
+        <div class="field input">
+          <label for="username">Email</label>
+          <input type="text" class="username" id="username" name="email" value="<?= $email ?>" placeholder="Enter your Email" required>
         </div>
-    </body>
+        <div class="field input">
+          <label for="password">Password*</label>
+          <input type="password" class="password" id="password" name="password" value="<?= $password ?>" placeholder="Enter your password" required>
+        </div>
+        <div class="field">
+          <button type="submit" class="btn" name="submit" value="login">Login</button>
+        </div>
+        <div class="links">
+          Don't have an account? <a href="sign.php">Sign Up</a>
+        </div>
+      </form>
+      </form-box>
+    </div>
+</body>
+
 </html>

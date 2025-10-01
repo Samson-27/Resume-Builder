@@ -2,7 +2,11 @@
 //Initialize the session
 session_start();
 
-$authenticated = false;
+
+if (isset($_SESSION['email'])) {
+  header("Location: dashboard.php");
+  exit();
+}
 ?>
 
 
@@ -144,6 +148,7 @@ $authenticated = false;
   </section>
 
   <!--Javascript-->
-    <script src="assets/script.js"></script>
+  <script src="assets/script.js"></script>
 </body>
+
 </html>

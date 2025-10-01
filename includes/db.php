@@ -1,14 +1,11 @@
 <?php
-    $host="localhost";
-    $user="root";
-    $pass="";
-    $db_name="project";
+$host = "localhost";
+$user = "blairex";
+$pass = "200527";
+$db_name = "project";
 
-    $conn=mysqli_connect($host,$user,$pass,$db_name);
-    if($conn){
-        echo"you have connected";        
-    }
-    else{
-        echo"could not connect";
-    }
-?>
+$conn = mysqli_connect($host, $user, $pass, $db_name);
+if (!$conn) {
+  die("Connection failed: " . mysqli_connect_error());
+}
+
