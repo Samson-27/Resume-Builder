@@ -31,7 +31,7 @@ if (!isset($_SESSION['email'])) {
       </ul>
       <ul class="bottom-menu">
         <li><i class="ri-customer-service-line" id="menu-icon"></i>Help Center</li>
-        <li><i class="ri-logout-box-line" id="menu-icon"></i>Log Out</li>
+        <li><i class="ri-logout-box-line" id="menu-icon"></i> <a href="logout.php" style="text-decoration: none;color:white;">Log Out </a></li>
       </ul>
     </aside>
     <!--main content-->
@@ -93,7 +93,6 @@ if (!isset($_SESSION['email'])) {
             </tr>
           </tbody>
         </table>
-
       </section>
 
   </div>
